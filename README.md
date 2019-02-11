@@ -1,5 +1,5 @@
 ## Modern JavaScript - Novice to Ninja
-All lecture files from the Modern JavaScript (Novvice to Ninja) course on Udemy.
+All lecture files from the Modern JavaScript (Novice to Ninja) course on Udemy.
 
 ### How to use this repository
 
