@@ -7,8 +7,13 @@ let i = 0;
 //   i++;
 // }
 
-while(i < names.length){
-  console.log(names[i]);
-  i++;
-}
+// while(i < names.length){
+//   console.log(names[i]);
+//   i++;
+// }
 
+i = 8;
+while(i > 5){
+  console.log('loop: ', i);
+  i--;
+}
