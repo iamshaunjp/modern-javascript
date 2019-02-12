@@ -1,14 +1,29 @@
-let age = 25;
-let year = 2019;
+// strings
+console.log('hello, world');
 
-console.log(age, year);
+let email = 'mario@thenetninja.co.uk';
+console.log(email);
 
-// age = 30;
-// console.log(age);
+// string concatenation
+let firstName = 'Brandon';
+let lastName = 'Sanderson';
 
-// const points = 100;
-// points = 50;
-// console.log(points);
+let fullName = firstName + ' ' + lastName;
 
-// var score = 75;
-// console.log(score);
+console.log(fullName);
+
+// getting individual characters
+console.log(fullName[2]);
+
+// string length
+console.log(fullName.length);
+
+// string methods
+console.log(fullName.toUpperCase());
+let result = fullName.toLocaleLowerCase();
+console.log(result);
+
+let index = email.indexOf('@');
+console.log('index of the @ sign:', index);
+
+
