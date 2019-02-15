@@ -1,19 +1,17 @@
-// Math object
+// primitive values
 
-console.log(Math);
-console.log(Math.PI);
-console.log(Math.E);
+let scoreOne = 50;
+let scoreTwo = scoreOne;
+console.log(`scoreOne: ${scoreOne}`, `scoreTwo: ${scoreTwo}`);
 
-const area = 7.7;
+scoreOne = 100;
+console.log(`scoreOne: ${scoreOne}`, `scoreTwo: ${scoreTwo}`);
 
-console.log(Math.round(area));
-console.log(Math.floor(area));
-console.log(Math.ceil(area));
-console.log(Math.trunc(area));
+// reference values
 
-// random numbers
+userOne = { name: 'ryu', age: 30 };
+userTwo = userOne;
+console.log(userOne, userTwo);
 
-const random = Math.random();
-
-console.log(random);
-console.log(Math.round(random * 100));
+userOne.name = 'chun-li';
+console.log(userOne, userTwo);
