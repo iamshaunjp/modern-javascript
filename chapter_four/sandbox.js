@@ -1,12 +1,21 @@
-// callbacks & forEach
-let people = ['mario', 'luigi', 'ryu', 'shaun', 'chun-li'];
+// object literals
 
-const logPerson = person => {
-  console.log(`hello ${person}`);
-}
+let user = {
+  name: 'crystal',
+  age: 30,
+  email: 'crystal@thenetninja.co.uk',
+  location: 'berlin',
+  blogs: ['why mac & cheese rules', '10 things to make with marmite']
+};
 
-// people.forEach(person => {
-//   console.log(`hello ${person}`);
-// });
+console.log(user);
+console.log(user.age);
 
-people.forEach(logPerson);
+user.age = 35;
+console.log(user.age);
+
+console.log(user['name']);
+user['name'] = 'chun-li';
+console.log(user['name']);
+
+console.log(typeof user);
