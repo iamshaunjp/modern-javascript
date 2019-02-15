@@ -1,6 +1,12 @@
 // callbacks & forEach
 let people = ['mario', 'luigi', 'ryu', 'shaun', 'chun-li'];
 
-people.forEach(person => {
+const logPerson = person => {
   console.log(`hello ${person}`);
-});
+}
+
+// people.forEach(person => {
+//   console.log(`hello ${person}`);
+// });
+
+people.forEach(logPerson);
