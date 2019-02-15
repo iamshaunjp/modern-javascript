@@ -12,4 +12,4 @@ paras.forEach(p => {
   } else if(p.textContent.includes('success')) {
     p.classList.add('success');
   }
-})
+});
