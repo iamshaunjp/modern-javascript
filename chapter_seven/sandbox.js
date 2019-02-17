@@ -25,4 +25,4 @@ form.username.addEventListener('keyup', e => {
     //console.log('failed');
     form.username.setAttribute('class', 'error');
   }
-})
+});
