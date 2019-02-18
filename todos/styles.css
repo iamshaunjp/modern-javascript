@@ -1,0 +1,28 @@
+body{
+  background: #352f5b;
+}
+.container{
+  max-width: 400px;
+}
+.form-control{
+  color: #fff !important;
+  border: none;
+  background: rgba(0,0,0,0.2);
+  max-width: 400px;
+}
+.form-control:focus{
+  background: rgba(0,0,0,0.2);
+  border: none;
+  box-shadow: none;
+}
+li.list-group-item{
+  background: #423a6f;
+}
+ul.todos{
+  max-width: 400px;
+}
+.delete{
+  cursor: pointer;
+}
+
+
