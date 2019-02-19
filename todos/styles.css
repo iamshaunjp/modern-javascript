@@ -4,25 +4,16 @@ body{
 .container{
   max-width: 400px;
 }
-.form-control{
-  color: #fff !important;
+input[type=text],
+input[type=text]:focus{
+  color: #fff;
   border: none;
   background: rgba(0,0,0,0.2);
   max-width: 400px;
 }
-.form-control:focus{
-  background: rgba(0,0,0,0.2);
-  border: none;
-  box-shadow: none;
-}
-li.list-group-item{
+.todos li{
   background: #423a6f;
-}
-ul.todos{
-  max-width: 400px;
 }
 .delete{
   cursor: pointer;
 }
-
-
