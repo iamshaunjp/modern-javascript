@@ -13,14 +13,17 @@ const generateTemplate = todo => {
 };
 
 const filterTodos = term => {
-  Array.from(list.children).forEach(todo => {
-    const text = todo.textContent.trim().toLowerCase();
-    if(!text.includes(term)){
-      todo.classList.add('filtered');
-    } else {
-      todo.classList.remove('filtered');
-    }
-  });
+
+  // add filtered class
+  Array.from(list.children)
+    .filter(todo => !todo.textContent.toLowerCase().includes(term))
+    .forEach(todo => todo.classList.add('filtered'));
+
+  // remove filtered class
+  Array.from(list.children)
+    .filter(todo => todo.textContent.toLowerCase().includes(term))
+    .forEach(todo => todo.classList.remove('filtered'));
+
 };
 
 // add todos event
