@@ -18,9 +18,6 @@ const getTodos = (callback) => {
 
 };
 
-console.log(1);
-console.log(2);
-
 getTodos((err, data) => {
   console.log('callback function fired');
   if(err){
@@ -29,6 +26,3 @@ getTodos((err, data) => {
     console.log(data);
   }
 });
-
-console.log(3);
-console.log(4);
