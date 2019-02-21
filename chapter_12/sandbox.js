@@ -21,31 +21,13 @@ const getTodos = (resource) => {
 };
 
 getTodos('json/luigi.json').then(data => {
-  console.log('promise resolved:', data);
+  console.log('promise 1 resolved:', data);
+  return getTodos('json/mario.json');
+}).then(data => {
+  console.log('promise 2 resolved:', data);
+  return getTodos('json/shaun.json');
+}).then(data => {
+  console.log('promise 3 resolved:', data);
 }).catch(err => {
   console.log('promise rejected:', err);
 });
-
-// promise example
-const getSomething = () => {
-
-  return new Promise((resolve, reject) => {
-    // do something (fetch data)
-    // resolve('some data');
-    reject('some error');
-  });
-
-};
-
-// getSomething().then(data => {
-//   console.log('promise resolved:', data);
-// }, err => {
-//   console.log('promise rejected:', err);
-// });
-
-// getSomething().then(data => {
-//   console.log('promise resolved:', data);
-// }).catch(err => {
-//   console.log('promise rejected:', err);
-// });
-
