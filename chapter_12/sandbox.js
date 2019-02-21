@@ -1,10 +1,20 @@
-// fetch API
+// async & await
 
-fetch('json/luigi.json').then(response => {
-    //console.log(response);
-    return response.json();
-  }).then(data => {
-    console.log(data);
-  }).catch(err => {
-    console.log(err);
-  });
+const getTodos = async () => {
+
+  let response = await fetch('json/luigi.json');
+  let data = await response.json();
+  return data;
+
+};
+
+console.log(1);
+console.log(2);
+
+getTodos()
+  .then(data => console.log('resolved:', data));
+
+console.log(3);
+console.log(4);
+
+// console.log(getTodos());
