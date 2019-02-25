@@ -8,11 +8,13 @@ let age = localStorage.getItem('age');
 
 console.log(name, age);
 
-// updating data
-localStorage.setItem('name', 'luigi');
-localStorage.age = '40';
+// deleting data from local storage
+localStorage.removeItem('name');
+localStorage.clear();
 
 name = localStorage.getItem('name');
 age = localStorage.getItem('age');
 
 console.log(name, age);
+
+
