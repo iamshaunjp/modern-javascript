@@ -6,3 +6,10 @@ body{
 .container{
   max-width: 400px;
 }
+.icon{
+  position: relative;
+  top: -50px;
+  border-radius: 50%;
+  width: 100px;
+  margin-bottom: -50px;
+}
