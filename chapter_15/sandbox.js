@@ -13,9 +13,19 @@ User.prototype.logout = function(){
   return this;
 };
 
+// admin
+function Admin(username, email){
+  User.call(this, username, email);
+}
+
+Admin.prototype = Object.create(User.prototype);
+
+Admin.prototype.deleteUser = function(user){
+  // delete the user
+};
+
 const userOne = new User('ryu', 'ryu@thenetninja.co.uk');
 const userTwo = new User('chun-li', 'chun.li@thenetninja.co.uk');
+const userThree = new Admin('shaun', 'shaun@thenetninja.co.uk');
 
-console.log(userOne);
-
-userOne.login().logout();
+console.log(userThree);
