@@ -19,15 +19,21 @@ class User {
   }
 }
 
+class Admin extends User {
+  deleteUser(user){
+    users = users.filter(u => u.username !== user.username);
+    return this; // allow method chaining
+  }
+}
+
 const userOne = new User('luigi', 'luigi@thenetninja.co.uk');
 const userTwo = new User('mario', 'mario@thenetninja.co.uk');
+const userThree = new Admin('shaun', 'shaun@thenetninja.co.uk');
 
-// userOne.login();
-// userOne.logout();
-// userTwo.login();
-// userTwo.logout();
+console.log(userOne, userThree);
 
-userTwo.login()
-  .incScore()
-  .incScore()
-  .logout();
+let users = [userOne, userTwo, userThree];
+console.log(users);
+
+userThree.deleteUser(userTwo);
+console.log(users);
