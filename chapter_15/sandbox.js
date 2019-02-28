@@ -1,37 +1,25 @@
-class User {
-  constructor(username, email){
-    this.username = username;
-    this.email = email;
-    this.score = 0;
-  }
-  login(){
-    console.log(`${this.username} just logged in`);
-    return this;
-  }
-  logout(){
-    console.log(`${this.username} just logged out`);
-    return this;
-  }
-  incScore(){
-    this.score += 1;
-    console.log(`${this.username} has a score of ${this.score}`);
-    return this;
-  }
+// constructor functions
+// class User {
+//   constructor(username){
+//     this.username = username;
+//   }
+// }
+
+function User(username, email){
+  this.username = username;
+  this.email = email;
+  this.login = function(){
+    console.log(`${this.username} has logged in`);
+  };
 }
 
-class Admin extends User {
-  constructor(username, email, title){
-    super(username, email);
-    this.title = title;
-  }
-  deleteUser(user){
-    users = users.filter(u => u.username !== user.username);
-    return this; // allow method chaining
-  }
-}
+const userOne = new User('ryu', 'ryu@thenetninja.co.uk');
+const userTwo = new User('chun-li', 'chun.li@thenetninja.co.uk');
 
-const userOne = new User('luigi', 'luigi@thenetninja.co.uk');
-const userTwo = new User('mario', 'mario@thenetninja.co.uk');
-const userThree = new Admin('shaun', 'shaun@thenetninja.co.uk', 'black-belt ninja');
+console.log(userOne, userTwo);
+userOne.login();
 
-console.log(userOne, userThree);
+// the 'new' keyword
+// 1 - it creates a new empty object {}
+// 2 - it binds the value of 'this' to the new empty object
+// 3 - it calls the constructor function to 'build' the object
