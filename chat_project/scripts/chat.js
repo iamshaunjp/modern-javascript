@@ -34,10 +34,10 @@ class Chatroom {
     this.username = username;
   }
   updateRoom(room){
+    this.room = room;
+    console.log('room updated');
     if(this.unsub){
       this.unsub();
-      this.room = room;
-      console.log('room updated');
     }
   }
 }
@@ -52,6 +52,5 @@ setTimeout(() => {
   chatroom.updateRoom('general');
   chatroom.updateName('yoshi');
   chatroom.getChats(data => console.log(data));
-  chatroom.addChat('hello');
 }, 3000);
 
