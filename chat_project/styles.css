@@ -10,7 +10,7 @@
 .btn:focus{
   outline: none !important;
 }
-.name{
+.username{
   font-weight: bold;
 }
 .time{
