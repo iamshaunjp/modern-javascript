@@ -10,3 +10,10 @@
 .btn:focus{
   outline: none !important;
 }
+.name{
+  font-weight: bold;
+}
+.time{
+  font-size: 0.7em;
+  color: #999;
+}
