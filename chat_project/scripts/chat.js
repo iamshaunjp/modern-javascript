@@ -34,10 +34,10 @@ class Chatroom {
     this.username = username;
   }
   updateRoom(room){
+    this.room = room;
+    console.log('room updated');
     if(this.unsub){
       this.unsub();
-      this.room = room;
-      console.log('room updated');
     }
   }
 }
