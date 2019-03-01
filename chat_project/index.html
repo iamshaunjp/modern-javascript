@@ -51,6 +51,22 @@
     </form>
   </div>
   
+  
+  <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-firestore.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBSEjfIg32YR9X0w8vdvmEJ8VkdqVS85Gk",
+      authDomain: "udemy-js-ab45b.firebaseapp.com",
+      databaseURL: "https://udemy-js-ab45b.firebaseio.com",
+      projectId: "udemy-js-ab45b",
+      storageBucket: "udemy-js-ab45b.appspot.com",
+      messagingSenderId: "307507834502"
+    };
+    firebase.initializeApp(config);
+    const db = firebase.firestore();
+  </script>
   <script src="scripts/chat.js"></script>
   <script src="scripts/ui.js"></script>
   <script src="scripts/app.js"></script>
