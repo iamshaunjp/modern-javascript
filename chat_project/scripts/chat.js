@@ -21,7 +21,7 @@ class Chatroom {
   getChats(callback){
     this.unsub = this.chats
       .where('room', '==', this.room)
-      .orderBy('created_at', 'desc')
+      .orderBy('created_at')
       .onSnapshot(snapshot => {
         snapshot.docChanges().forEach(change => {
           if(change.type === 'added'){
@@ -32,7 +32,6 @@ class Chatroom {
   }
   updateName(username){
     this.username = username;
-    localStorage.username = username;
   }
   updateRoom(room){
     if(this.unsub){
