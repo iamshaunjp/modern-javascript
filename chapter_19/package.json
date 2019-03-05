@@ -4,13 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "babel": "node_modules/.bin/babel ./src/index.js -w -o ./dist/assets/bundle.js"
+    "babel": "node_modules/.bin/babel ./src/index.js -w -o ./dist/assets/bundle.js",
+    "webpack": "node_modules/.bin/webpack"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.3.4",
-    "@babel/preset-env": "^7.3.4"
+    "@babel/preset-env": "^7.3.4",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
   }
 }
