@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "babel": "node_modules/.bin/babel ./src/index.js -w -o ./dist/assets/bundle.js",
-    "webpack": "node_modules/.bin/webpack -w"
+    "webpack": "node_modules/.bin/webpack -w",
+    "serve": "webpack-dev-server"
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +15,7 @@
     "@babel/core": "^7.3.4",
     "@babel/preset-env": "^7.3.4",
     "webpack": "^4.29.6",
-    "webpack-cli": "^3.2.3"
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1"
   }
 }

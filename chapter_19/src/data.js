@@ -3,7 +3,8 @@ const users = [
   { name: 'luigi', premium: false },
   { name: 'yoshi', premium: true },
   { name: 'toad', premium: true },
-  { name: 'peach', premium: false }
+  { name: 'peach', premium: false },
+  { name: 'bowser', premium: false }
 ];
 
 // export default users;
