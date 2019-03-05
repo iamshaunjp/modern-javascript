@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "babel": "node_modules/.bin/babel ./src/index.js -w -o ./dist/assets/bundle.js",
-    "webpack": "node_modules/.bin/webpack"
+    "webpack": "node_modules/.bin/webpack -w"
   },
   "author": "",
   "license": "ISC",
