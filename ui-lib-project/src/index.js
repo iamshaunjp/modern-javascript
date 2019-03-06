@@ -1,1 +1,1 @@
-console.log('index.js file');
+import './styles.css';
