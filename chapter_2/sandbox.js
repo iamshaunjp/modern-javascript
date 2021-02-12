@@ -161,6 +161,166 @@
 
 
 
+// for loop
+
+// for(let i = 0; i < 5; i++) {
+    //  console.log('in loop: ', i);
+// }
+// console.log('loop done');
+
+// const names = ['eddie' , 'mike', 'sean'];
+
+// for(let i = 0; i < names.length; i++) {
+//     // console.log(names[i]);
+//     let html = `<div>${names[i]}</div>`;
+//     console.log(html);
+// }
+
+
+
+// WHILE loop
+
+// let i = 0;
+
+// while(i < 5) {
+    // console.log('in loop ', i);
+    // i++;
+// }
+
+// while(i < names.length) {
+//     console.log(names[i]);
+//     i++;
+// }
+
+
+// DO WHLIE (RUN AT LEAST ONCE)
+// let i = 3;
+// do {
+//     console.log('val of i is ', i);
+//     i++;
+// } while(i < 5);
+
+
+
+
+
+
+// IF STATEMENTS
+
+// const age = 21;
+
+// if(age > 20) {
+//     console.log('you are over 20 years old');
+// }
+
+// const ninjas = ['eddie' , 'mike', 'sean'];
+
+// if(ninjas.length > 2) {
+//     console.log("that's a lot of ninjas");
+// }
+
+
+const password = 'password1234';
+
+// if(password.length >= 12) {
+//     console.log('pass is very very good and long');
+// } else if(password.length >= 8) {
+//     console.log('password is ok');
+// } else {
+//     console.log('pass is bad');
+// }
+
+// LOGICAL OPERATORS OR || and AND &&
+
+// if(password.length >= 12 && password.includes('@')) {
+//     console.log('pass is very very good and long');
+// } else if(password.length >= 8 || password.includes('@') && password.length > 5) {
+//     console.log('password is ok');
+// } else {
+//     console.log('bad pass');
+// }
+
+// const scores = [50, 20, 25, 0, 31, 99, 11, 83];
+
+// for(let i = 0; i < scores.length; i++) {
+//     if(scores[i] === 0){
+//         continue;
+//     }
+//     console.log('your score: ', scores[i]);
+    
+//     if(scores[i] === 99) {
+//         console.log('congrats');
+//         break;
+//     }
+// }
+// if(!user) {
+
+// }
+
+// const removeLast = scores.pop();
+// console.log(removeLast);
+// const removeSome = scores.splice(1,2);
+// console.log(removeSome);
+
+
+// SWITCH STATEMENT
+
+// const grade = 'D';
+
+// switch(grade) {
+//     case 'A':
+//         console.log('got an A');
+//     break;
+//     case 'B':
+//         console.log('got a B');
+//     break;
+//     case 'C':
+//         console.log('got a C');
+//     break;
+//     case 'D':
+//         console.log('got a D');
+//     break;
+//     case 'E':
+//         console.log('got an E');
+//     break;
+//     default:
+//         console.log('not correct');
+// }
+
+
+
+
+// let age = 30;
+
+// if(true) {
+//     let age = 40;
+//     // age = 33;
+//     let name = 'eddie';
+//     console.log('inside 1st code block: ', age, name);
+//     if(true) {
+//         age = 44;
+//         console.log('inside 2nd code block ', age);
+//         var oldVar = '"global everywhere"';
+//     }
+// }
+
+// console.log('outside code block: ', age, name, oldVar);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
