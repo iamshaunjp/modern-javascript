@@ -1,21 +1,13 @@
-//creating an object literals
+//The Query Selector
 
-let user = {
-  name: 'crystal',
-  age: 30,
-  email: 'crystal@thenetninja.co.uk',
-  location: 'berlin',
-  blogs: ['why mac & cheese rules', '10 things to make with marmite']
-};
+// const para = document.querySelector('p')
+// const para = document.querySelector('.error')
+const para = document.querySelector('div.error')
 
-console.log(user)
-console.log(user.name)
+console.log(para)
 
-user.age = 35;
-console.log(user.age)
+const paras = document.querySelectorAll('p');
+const errors = document.querySelectorAll('.error');
 
-console.log(user['location'])
-user['name'] = 'chun-li'
-console.log(user['name'])
 
-console.log(typeof user)
+console.log(errors)

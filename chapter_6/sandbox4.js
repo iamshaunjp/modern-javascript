@@ -1,34 +1,14 @@
-//Object in Arrays
+//getting & setting attributes
 
-// const blogs = [
-//   {title: 'why mac & cheese rules', likes: 30},
-//   {title: '10 things to make with marmite', likes: 50},
-// ]
+const link = document.querySelector('a');
 
-// console.log(blogs);
+console.log(link.getAttribute('href'));
 
-let user = {
-  name: 'crystal',
-  age: 30,
-  email: 'crystal@thenetninja.co.uk',
-  location: 'berlin',
-  blogs: [
-    {title: 'why mac & cheese rules', likes: 30},
-    {title: '10 things to make with marmite', likes: 50},
-  ],
-  login() {
-    console.log('the user logged in')
-  },
-  logout() {
-    console.log('the user logged out')
-  },
-  logBlogs() {
-    console.log('this user has written the following blogs')
-    this.blogs.forEach((blog) => {
-      console.log(blog.title, blog.likes)
-    })
-  },
-}
+link.setAttribute('href', 'https://www.thenetninja.co.uk');
+link.innerText = 'TheNet Ninja Website';
 
-user.logBlogs()
-// console.log(this)
+const mssg = document.querySelector('p');
+
+console.log(mssg.getAttribute('class'));
+mssg.setAttribute('class', 'success');
+mssg.setAttribute('style', 'color: pink');

@@ -1,24 +1,22 @@
-//'this' keyword
+const para = document.querySelector('p');
 
-let user = {
-  name: 'crystal',
-  age: 30,
-  email: 'crystal@thenetninja.co.uk',
-  location: 'berlin',
-  blogs: ['why mac & cheese rules', '10 things to make with marmite'],
-  login() {
-    console.log('the user logged in')
-  },
-  logout() {
-    console.log('the user logged out')
-  },
-  logBlogs() {
-    console.log('this user has written the following blogs')
-    this.blogs.forEach((blog) => {
-      console.log(blog)
-    })
-  },
-}
+// para.innerText += 'ninjas are awesome!'
 
-user.logBlogs()
-// console.log(this)
+const paras = document.querySelectorAll('p')
+
+// paras.forEach(para => {
+//   console.log(para.innerText);
+//   para.innerText += ' new text'
+// })
+
+const content = document.querySelector('.content');
+
+// console.log(content.innerHTML)
+
+// content.innerHTML += '<h2>This is the new h2</h2>'
+
+const people = ['mario', 'luigi', 'yoshi'];
+
+people.forEach(person => {
+  content.innerHTML += `<p>${person}</p>`
+})

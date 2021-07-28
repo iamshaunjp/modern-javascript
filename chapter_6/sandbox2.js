@@ -1,19 +1,12 @@
-//adding methods to the object
+//get an element by ID
+const title = document.getElementById('page-title');
+console.log(title)
 
-let user = {
-  name: 'crystal',
-  age: 30,
-  email: 'crystal@thenetninja.co.uk',
-  location: 'berlin',
-  blogs: ['why mac & cheese rules', '10 things to make with marmite'],
-  login: function () {
-    console.log('the user logged in')
-  },
-  logout: function() {
-    console.log('the user logged out')
-  }
-}
+//get elements by their class name
+const errors = document.getElementsByClassName('error')
+console.log(errors)
 
-user.login()
-user.logout()
-
+//get elements by their tag name
+const paras = document.getElementsByTagName('p')
+console.log(paras)
+console.log(paras[1])
