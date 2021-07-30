@@ -1,10 +1,9 @@
 const form = document.querySelector("form");
 const correctAnswers = ["B", "B", "B", "B"];
 const result = document.querySelector(".result");
-
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  console.log(e.target);
+
   let score = 0;
   const selectedAnswers = [
     form.q1.value,
