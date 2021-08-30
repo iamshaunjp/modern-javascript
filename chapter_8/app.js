@@ -16,6 +16,27 @@ form.addEventListener("submit", (e) => {
       score += 25;
     }
   });
-  result.querySelector("span").textContent = `${score}%`;
+  scrollTo(0, 0);
+  // result.querySelector("span").textContent = `${score}%`;
   result.classList.remove("d-none");
+
+  let output = 0;
+  const timer = setInterval(() => {
+    result.querySelector("span").textContent = `${output}%`;
+    if (output === score) {
+      clearInterval(timer);
+    } else {
+      output++;
+    }
+  }, 10);
 });
+
+// window.alert('hello')
+
+// window.setTimeout(() => {
+//   alert('hello, ninjas')
+// }, 3000);
+
+// setInterval(()=>{
+//   console.log('hello')
+// },1000)
