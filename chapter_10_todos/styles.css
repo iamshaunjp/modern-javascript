@@ -1,0 +1,25 @@
+
+body{
+  background: #352f5b;
+}
+.container{
+  max-width: 400px;
+}
+/* [attribute] selector, it is used  to select element that have specific attributes or attribute values */
+input[type=text],
+input[type=text]:focus{
+  color: #fff;
+  border: none;
+  background: rgba(0,0,0,0.2);
+  max-width: 400px;
+}
+.todos li{
+  background: #423a6f;
+  color: #fff;
+}
+.delete{
+  cursor: pointer;
+}
+.filtered {
+  display: none !important;
+}

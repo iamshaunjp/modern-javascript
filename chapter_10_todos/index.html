@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/5bb5e30b62.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Todos</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="text-center text-light my-4">
+        <h1 class="mb-4">Todo List</h1>
+        <form class="search">
+          <input
+            class="form-control m-auto"
+            type="text"
+            name="search"
+            placeholder="search todos"
+          />
+        </form>
+      </header>
+      <ul class="list-group todos mx-auto text-light">
+        <li
+          class="list-group-item d-flex justify-content-between align-items-center"
+        >
+          <span>play mariokart</span>
+          <i class="far fa-trash-alt delete"></i>
+        </li>
+        <li
+          class="list-group-item d-flex justify-content-between align-items-center"
+        >
+          <span>defeat ganon in zelda</span>
+          <i class="far fa-trash-alt delete"></i>
+        </li>
+        <li
+          class="list-group-item d-flex justify-content-between align-items-center"
+        >
+          <span>make a veggie pie</span>
+          <i class="far fa-trash-alt delete"></i>
+        </li>
+      </ul>
+      <form class="add text-center my-4">
+        <label class="text-light">Add a new todo...</label>
+        <input class="form-control m-auto" type="text" name="add" />
+      </form>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
