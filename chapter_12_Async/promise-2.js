@@ -1,4 +1,3 @@
-//if we have several files(endpoints) that we need to get one after the other
 const getTodos = (apis) => {
   return new Promise((resolve, reject)=>{
     const request = new XMLHttpRequest();
@@ -18,7 +17,7 @@ const getTodos = (apis) => {
 }
 
 getTodos('todos/luigi.json').then(data=>{
-  console.log(data)
+  console.log('promise resolved: ', data)
 }).catch(err => {
-  console.log(err)
+  console.log('promise rejected: ', err)
 })
