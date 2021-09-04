@@ -15,7 +15,6 @@ console.log(2);
 
 getTodos()
   .then(data => console.log('resolved', data))
-  .catch(err => console.log(err));
 
 console.log(3);
 console.log(4);
