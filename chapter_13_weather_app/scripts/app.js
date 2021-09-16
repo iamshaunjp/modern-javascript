@@ -1,6 +1,10 @@
 //DOM manipulation in this document - show things on the page
 
 const cityForm = document.querySelector('form');
+const card = document.querySelector('.card');
+const  details = document.querySelector('.details');
+
+
 
 const updateCity = async (city) => {
   
