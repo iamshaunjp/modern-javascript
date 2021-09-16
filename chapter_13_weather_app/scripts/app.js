@@ -2,7 +2,9 @@
 
 const cityForm = document.querySelector('form');
 const card = document.querySelector('.card');
-const  details = document.querySelector('.details');
+const details = document.querySelector('.details');
+const time = document.querySelector('img.time');
+const icon = document.querySelector('.icon img');
 
 const updateUI = (data) => {
 
@@ -11,6 +13,7 @@ const updateUI = (data) => {
   // const weather = data.weather;
 
   //below is Destructuring, which works the same as line 10 & 11 but less code and better readability
+  //Desctruturing is an easy way to get properties from an object and them store them in a constant of the sname name.
   const {cityDetails, weather} = data;
 
   //update details template
@@ -27,7 +30,6 @@ const updateUI = (data) => {
   if(card.classList.contains('d-none')){
     card.classList.remove('d-none')
   }
-
 }
 
 const updateCity = async (city) => {
