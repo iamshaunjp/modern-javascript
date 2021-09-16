@@ -14,21 +14,21 @@
     <title>Weather App</title>
   </head>
   <body>
-
     <div class="container my-5 mx-auto">
-
       <h1 class="text-muted text-center my-4">NinjaWeather</h1>
 
       <form class="change-location my-4 text-center text-muted">
         <label for="city">Enter a location for weather information</label>
-        <input type="text" name="city" class="form-control p-4">
+        <input type="text" name="city" class="form-control p-4" />
       </form>
 
-      <div class="card shadow-lg rounded">
-        <img src="https://via.placeholder.com/400x300" class="time card-img-top" alt="">
-        <div class="icon bg-light mx-auto text-center">
-
-        </div>
+      <div class="card shadow-lg rounded d-none">
+        <img
+          src="https://via.placeholder.com/400x300"
+          class="time card-img-top"
+          alt=""
+        />
+        <div class="icon bg-light mx-auto text-center"></div>
         <div class="text-muted text-uppercase text-center details">
           <h5 class="my-3">City name</h5>
           <div class="my-3">Weather Condition</div>
@@ -38,7 +38,6 @@
           </div>
         </div>
       </div>
-
     </div>
 
     <script src="scripts/forecast.js"></script>
