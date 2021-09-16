@@ -6,9 +6,12 @@ const  details = document.querySelector('.details');
 
 const updateUI = (data) => {
 
-  const cityDetails = data.cityDetails;
-  const weather = data.weather;
-  // console.log(cityDetails, weather)
+  // console.log(data)
+  // const cityDetails = data.cityDetails;
+  // const weather = data.weather;
+
+  //below is Destructuring, which works the same as line 10 & 11 but less code and better readability
+  const {cityDetails, weather} = data;
 
   //update details template
   details.innerHTML = `
