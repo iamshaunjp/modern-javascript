@@ -1,4 +1,4 @@
-// class inheritance
+// class inheritance (subclasses)
  class User {
   constructor(username, email){
     this.username = username

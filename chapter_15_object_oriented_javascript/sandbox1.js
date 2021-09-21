@@ -1,3 +1,4 @@
+ // classes
  class User {
    constructor(username, email){
      //set up properties
