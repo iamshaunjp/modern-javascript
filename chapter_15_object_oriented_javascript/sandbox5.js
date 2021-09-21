@@ -1,4 +1,4 @@
-// class inheritance
+// super()
  class User {
   constructor(username, email){
     this.username = username
@@ -21,6 +21,10 @@
 }
 
 class Admin extends User {
+  constructor(username, email, title){
+    super(username, email)
+    this.title = title
+  }
    deleteUser(userBeingDeleted){
     users = users.filter(user => user.username !== userBeingDeleted.username)
    }
@@ -28,11 +32,6 @@ class Admin extends User {
 
 const userOne = new User('mario', 'mario@learn.ca')
 const userTwo = new User('luigi','luigi@learn.ca')
-const userThree = new Admin('shaun','shaun@learn.ca')
+const userThree = new Admin('shaun','shaun@learn.ca', 'wower')
 
-
-let users = [userOne, userTwo, userThree]
-console.log(users)
-
-userThree.deleteUser(userTwo)
-console.log(users)
+console.log(userThree)
