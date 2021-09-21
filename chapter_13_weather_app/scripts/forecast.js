@@ -31,11 +31,11 @@ const getCity = async (city) => {
   return data[1];
 }
 
-//
-getCity('richmond')
-  .then(data => {
-  //we want to take the data and get the Key(city code), and pass it into a get weather request - getWeather(). We return a promise by returning the whole thing, so we can chain these things together.  
-    return getWeather(data.Key)})
-  .then(data => {
-    console.log(data)})
-  .catch(err => console.log(err))
+
+// getCity('richmond')
+//   .then(data => {
+//   //we want to take the data and get the Key(city code), and pass it into a get weather request - getWeather(). We return a promise by returning the whole thing, so we can chain these things together.  
+//     return getWeather(data.Key)})
+//   .then(data => {
+//     console.log(data)})
+//   .catch(err => console.log(err))
