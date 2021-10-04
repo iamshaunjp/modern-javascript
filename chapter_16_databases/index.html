@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <title>Databases (Firebase)</title>
+  </head>
+  <body>
+    <div class="container my-5">
+      <h2>Recipes</h2>
+      <ul>
+        <!-- <li>Mushroom pie</li>
+        <li>Veg curry</li> -->
+      </ul>
+      <form>
+        <label for="recipe">Add a new recipe:</label>
+        <div class="input-group">
+          <input type="text" class="form-control" id="recipe" required />
+          <div class="input-group-append">
+            <input
+              type="submit"
+              value="add"
+              class="btn btn-outline-secondary"
+            />
+          </div>
+        </div>
+      </form>
+      <button>unsubscribe from changes</button>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
+    <script>
+      var config = {
+        apiKey: 'AIzaSyAMDAZFxognfNjQ0oFa6FCKXyfaviZcKPc',
+        authDomain: 'udemy-modern-javascript-382b8.firebaseapp.com',
+        projectId: 'udemy-modern-javascript-382b8',
+        storageBucket: 'udemy-modern-javascript-382b8.appspot.com',
+        messagingSenderId: '556679002693',
+        appId: '1:556679002693:web:098e8aebcd315b395c412c',
+        measurementId: 'G-L78Q7YTR7T',
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(config);
+      const db = firebase.firestore();
+    </script>
+
+    <script src="sandbox.js"></script>
+  </body>
+</html>
